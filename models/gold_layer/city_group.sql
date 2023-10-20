@@ -5,5 +5,5 @@ SELECT
     SUM(Total_Extra_Data_Charges) + SUM(Total_Long_Distance_Charges) as Total_Extra_Charges,
     SUM(Total_Refunds) as Total_Refunds,
     SUM(Total_Revenue) as Total_Revenue
-FROM POC_AIRFLOW_DBT.RAW.telecom_customer_churn
+FROM POC_AIRFLOW_DBT.BRONZE_LAYER.telecom_customer_churn
 GROUP BY city
