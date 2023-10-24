@@ -35,6 +35,9 @@ models:
   dbt_transformations:
     gold_layer:
       core:
-        materialized: view
+        +materialized: view
+        +schema: Gold_layer
+
     silver_layer:
-      materialized: table
+      +materialized: table
+      +schema: Silver_layer
